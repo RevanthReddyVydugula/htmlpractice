@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primary Details</title>
+    <link rel="stylesheet" href="form1.css">
+</head>
+
+<body>
+    <h1>Registration Form</h1>
+    <div class="form-page">
+
+        <form action="feedback.html" method="get">
+            <fieldset>
+                <section>
+                    <label class="label" for="username">UserName</label><br>
+                    <input type="text" id="username" name="username" minlength="5" maxlength="10" required>
+                    <!-- alert('text only') -->
+                </section>
+                <br>
+                <section>
+                    <label class="label" for="email">Email</label><br>
+                    <input type="email" id="email" name="email" minlength="6" maxlength="15"
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,}$" required>
+                </section>
+                <br>
+                <section>
+                    <label class="label" for="gender">Gender:</label><br>
+                    <select id="gender" name="gender" required>
+                        <option value="">Select Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </section>
+                <br>
+                <section class="checkbox">
+                    <span>Choose Your Hobbies</span>
+                    <br>
+                    <input type="checkbox" id="cbox" name="cbox" value="games">
+                    <label for="cbox">Games</label>
+                    <br>
+                    <input type="checkbox" id="cbox" name="cbox" value="reading">
+                    <label for="cbox">Reading Books</label>
+                    <br>
+                    <input type="checkbox" id="cbox" name="cbox" value="music">
+                    <label for="cbox">Listening Music</label>
+                    <br>
+                </section>
+                <section class="radiobutton">
+                    <br>
+                    <span>Would you like to receive messages to this Email?**</span>
+                    <br>
+                    <input type="radio" id="rbutton" name="suggestions" value="yes" required>
+                    <label for="rbutton">Yes</label>
+                    <input type="radio" id="rbutton" name="suggestions" value="no">
+                    <label for="rbutton">No</label>
+                </section>
+                <br>
+                <button type="submit">Submit</button>
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>
