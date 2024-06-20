@@ -1,0 +1,33 @@
+* {
+    font-weight: bold;
+}
+
+
+h1 {
+    text-align: center;
+}
+
+fieldset {
+    background-color: rgb(152, 246, 145);
+}
+
+.form-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+}
+
+button {
+    align-self: center;
+}
+
+button:hover {
+    background-color: red;
+}
